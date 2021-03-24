@@ -15,6 +15,7 @@ services:
      - mysql
    volumes:
      - .:/var/www/html
+     - ./docker/mysql/my.cnf:/etc/mysql/conf.d/my.cnf
  mysql:
    image: mysql:5.7
    environment:
